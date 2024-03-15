@@ -1,8 +1,15 @@
+import { useOutletContext } from "react-router-dom";
+
 const Cart = () => {
+  const [cart, setCart] = useOutletContext();
   return (
     <>
       <div id="main">
-        <p>displaying x elements in cart</p>
+        <ul>
+          {cart.map((item) => {
+            return <li key={item.id}>{item.title}</li>;
+          })}
+        </ul>
       </div>
     </>
   );

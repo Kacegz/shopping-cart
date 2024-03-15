@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom";
+import styles from "./Home.module.css";
 const Home = () => {
   return (
     <>
-      <div id="main">
-        <h1>Welcome to the bonsai shop!</h1>
-        <h2>
-          <Link to="shop">Click here to start shopping</Link>
-        </h2>
+      <div className={styles.wrapper}>
+        <div className={styles.main}>
+          <div>
+            <h1 className={styles.logo}>Gilded Gemstone Atelier</h1>
+          </div>
+          <Link to="shop">
+            <button className={styles.goshop}>Visit shop</button>
+          </Link>
+        </div>
       </div>
     </>
   );

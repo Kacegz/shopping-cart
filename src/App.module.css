@@ -1,0 +1,59 @@
+.navbar{
+    height: 40px;
+    background-color: rgba(217, 219, 143,0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid var(--secondary);
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 32px;
+  }
+  .navimg{
+    height:40px;
+  }
+  a{
+    height: 40px;
+    transition: 200ms ease-in-out;
+    text-decoration: none;
+  }
+  a:hover{
+    transform: scale(1.1);
+  }
+ .main{
+    flex: 1;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  
+ .footer{
+    background-color:rgba(217, 219, 143,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--secondary);
+    padding-left: 10vw;
+    padding-right: 10vw;
+    
+  }
+  .flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+  }
+  .flexgap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+  }
+.gem{
+  width: 30px;
+  height: 30px;
+}

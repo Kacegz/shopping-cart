@@ -7,13 +7,16 @@ import App from "./App";
 const Router = () => {
   const Router = createBrowserRouter([
     {
-      path: "/",
       element: <App />,
       children: [
-        { index: true, element: <Home /> },
         { path: "shop", element: <Shop /> },
         { path: "cart", element: <Cart /> },
       ],
+    },
+    {
+      path: "/",
+      element: <Home />,
+      index: true,
     },
   ]);
   return <RouterProvider router={Router} />;

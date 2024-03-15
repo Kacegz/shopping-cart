@@ -1,0 +1,60 @@
+.wrapper{
+  flex: 1;
+  background-image: url("./assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  display: flex;
+}
+.main{
+  flex: 1;
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.logo::before{
+  padding-left: -100%;
+}
+.logo{
+    padding-left: 0px;
+    font-size: 48px;
+    color: #D4af37;
+    text-shadow: 1px 1px 20px #000000;
+    animation: 1.5s ease-in-out 0s 1 load;
+    font-family: "Handlee",cursive,monospace;
+    transition: 400ms ease-in-out;
+}
+.logo:hover{
+  text-shadow: 2px 2px 24px #D4af37;  
+}
+.goshop{
+    width: 160px;
+    padding: 20px;
+    /*background-color: #D4af37;*/
+    background-color: #D4af37;
+    border-radius: 20px;
+    border: none;
+    outline:none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 12px #D4af37;   
+    transition: 200ms ease-in-out;
+    font-family: "Handlee",cursive,monospace;
+    font-weight: bold;
+}
+.goshop:hover{
+  transform: scale(1.1);
+}
+@keyframes load {
+  0%{
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
