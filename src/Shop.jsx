@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import styles from "./Shop.module.css";
+import Product from "./Product";
 
 const Shop = () => {
   const [cart, setCart] = useOutletContext();
@@ -28,10 +29,6 @@ const Shop = () => {
     }
     getData();
   }, []);
-  function handleAddToCart(item) {
-    console.log(item);
-    setCart([...cart, item]);
-  }
   return (
     <>
       {loading && <div>Loading...</div>}
@@ -40,32 +37,12 @@ const Shop = () => {
         <div id="main">
           <div className={styles.items}>
             {data.map((item) => (
-              <div key={item.id} className={styles.product}>
-                <img
-                  src={item.image}
-                  alt="Product image"
-                  srcSet=""
-                  className={styles.productImg}
-                />
-                <div className={styles.productName}>
-                  <p>{item.title}</p>
-                  <p>Price: {item.price}$</p>
-                </div>
-                <div className={styles.options}>
-                  <div className={styles.numbers}>
-                    <input type="button" value="+" />
-                    <input type="text" name="" id="amount" value="0" />
-                    <input type="button" value="-" />
-                  </div>
-                  <input
-                    type="button"
-                    value="Add to cart"
-                    onClick={() => {
-                      handleAddToCart(item);
-                    }}
-                  />
-                </div>
-              </div>
+              <Product
+                item={item}
+                key={item.id}
+                cart={cart}
+                setCart={setCart}
+              />
             ))}
           </div>
         </div>
