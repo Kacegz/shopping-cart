@@ -14,18 +14,21 @@
 
 .product{
     background-color: antiquewhite;
-    height: 40vh;
-    width: 30vw;
+    height: 30vh;
+    width: 40vw;
     border-radius: 20px;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 } 
 .productImg{
-    width: 20vw;
-    height: 20vh;
+    width: 300px;
+    height: 30vh;
     border-radius: 20px;
+}
+.details{
+    flex: 1;
 }
 .productName{
     text-align: center;
@@ -39,6 +42,7 @@ p{
     display: flex;
     justify-content:flex-end ;
     align-items: center;
+    flex-direction: column;
     padding-bottom: 20px;
     gap: 10px;
 }

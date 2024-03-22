@@ -26,47 +26,49 @@ const Product = ({ item, cart, setCart }) => {
           srcSet=""
           className={styles.productImg}
         />
-        <div className={styles.productName}>
-          <p>{item.title}</p>
-          <p>Price: {item.price}$</p>
-        </div>
-        <div className={styles.options}>
-          <div className={styles.numbers}>
+        <div className={styles.details}>
+          <div className={styles.productName}>
+            <p>{item.title}</p>
+            <p>Price: {item.price}$</p>
+          </div>
+          <div className={styles.options}>
+            <div className={styles.numbers}>
+              <input
+                className={styles.amountButton}
+                type="button"
+                value="-"
+                onClick={() => {
+                  decreaseAmount();
+                }}
+              />
+              <input
+                className=""
+                type="text"
+                name=""
+                id="amount"
+                value={amount}
+                onChange={(e) => {
+                  changeValue(e.target.value);
+                }}
+              />
+              <input
+                className={styles.amountButton}
+                type="button"
+                value="+"
+                onClick={() => {
+                  increaseAmount();
+                }}
+              />
+            </div>
             <input
               className={styles.amountButton}
               type="button"
-              value="-"
+              value="Add to cart"
               onClick={() => {
-                decreaseAmount();
-              }}
-            />
-            <input
-              className=""
-              type="text"
-              name=""
-              id="amount"
-              value={amount}
-              onChange={(e) => {
-                changeValue(e.target.value);
-              }}
-            />
-            <input
-              className={styles.amountButton}
-              type="button"
-              value="+"
-              onClick={() => {
-                increaseAmount();
+                handleAddToCart(item, amount);
               }}
             />
           </div>
-          <input
-            className={styles.amountButton}
-            type="button"
-            value="Add to cart"
-            onClick={() => {
-              handleAddToCart(item, amount);
-            }}
-          />
         </div>
       </div>
     </>
