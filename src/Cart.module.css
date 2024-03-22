@@ -15,20 +15,60 @@
     flex-direction: column;
     gap: 20px;
     flex: 0.5;
-    height: 60vh;
-    border: 1px solid black;
+    height: 40vh;
+    border: 1px solid #D4af37;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20vh;
 }
 .item{
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    border: 1px solid black;
+    border: 1px solid #D4af37;
     border-radius: 20px;
 }
 .spacing{
+    padding-left: 10px;
     display: flex;
     gap: 10px;
+    align-items: center;
 }
+.cartEmpty{
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+    flex: 1;
+}
+.removeButton{
+    padding: 10px;
+    background-color: #D4af37;
+    border-radius: 20px;
+    border: none;
+    outline:none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 12px #D4af37;   
+    transition: 200ms ease-in-out;
+    font-family: "Handlee",cursive,monospace;
+    font-weight: bold;
+}
+.checkoutButton{
+    padding: 10px;
+    background-color: #D4af37;
+    border-radius: 20px;
+    border: none;
+    outline:none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 12px #D4af37;   
+    transition: 200ms ease-in-out;
+    font-family: "Handlee",cursive,monospace;
+    font-weight: bold;
+}
+.checkoutButton:hover{
+    transform: scale(1.1);
+  }

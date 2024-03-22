@@ -11,30 +11,48 @@ const Cart = () => {
     <>
       <div className={styles.main}>
         <div className={styles.itemList}>
-          {cart.map((item) => {
-            return (
-              <div className={styles.item} key={item.id}>
-                <p>{item.title}</p>
-                <div className={styles.spacing}>
-                  <p>amount: {item.amount}</p>
-                  <input
-                    type="button"
-                    value="Remove"
-                    onClick={() => {
-                      handleRemove(item);
-                    }}
-                  />
+          {cart.length > 0 ? (
+            cart.map((item) => {
+              return (
+                <div className={styles.item} key={item.id}>
+                  <div className={styles.itemTitle}>
+                    <p>{item.title}</p>
+                  </div>
+                  <div className={styles.spacing}>
+                    <p>Q:{item.amount}</p>
+                    <p>{item.amount * item.price}$</p>
+                    <input
+                      className={styles.removeButton}
+                      type="button"
+                      value="Remove"
+                      onClick={() => {
+                        handleRemove(item);
+                      }}
+                    />
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })
+          ) : (
+            <div className={styles.cartEmpty}>
+              <h3>Cart is empty</h3>
+            </div>
+          )}
         </div>
         <div className={styles.total}>
-          Total:
-          {cart.reduce((sum, { price, amount }) => {
-            return sum + price * amount;
-          }, 0)}
-          $
+          <h2>Summary</h2>
+          <p>
+            Total:
+            {cart.reduce((sum, { price, amount }) => {
+              return sum + price * amount;
+            }, 0)}
+            $
+          </p>
+          <input
+            className={styles.checkoutButton}
+            type="button"
+            value="Checkout"
+          />
         </div>
       </div>
     </>

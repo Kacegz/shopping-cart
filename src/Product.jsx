@@ -1,12 +1,12 @@
 import { useState } from "react";
-import styles from "./Shop.module.css";
+import styles from "./Product.module.css";
 const Product = ({ item, cart, setCart }) => {
   const [amount, setAmount] = useState(0);
   function increaseAmount() {
     setAmount(amount + 1);
   }
   function decreaseAmount() {
-    setAmount(amount - 1);
+    if (amount > 0) setAmount(amount - 1);
   }
   function changeValue(value) {
     setAmount(value);
@@ -33,6 +33,7 @@ const Product = ({ item, cart, setCart }) => {
         <div className={styles.options}>
           <div className={styles.numbers}>
             <input
+              className={styles.amountButton}
               type="button"
               value="-"
               onClick={() => {
@@ -40,6 +41,7 @@ const Product = ({ item, cart, setCart }) => {
               }}
             />
             <input
+              className=""
               type="text"
               name=""
               id="amount"
@@ -49,6 +51,7 @@ const Product = ({ item, cart, setCart }) => {
               }}
             />
             <input
+              className={styles.amountButton}
               type="button"
               value="+"
               onClick={() => {
@@ -57,6 +60,7 @@ const Product = ({ item, cart, setCart }) => {
             />
           </div>
           <input
+            className={styles.amountButton}
             type="button"
             value="Add to cart"
             onClick={() => {

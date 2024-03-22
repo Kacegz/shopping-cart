@@ -6,9 +6,7 @@ import cartimg from "./assets/cart.svg";
 import gem from "./assets/gem.svg";
 
 function App() {
-  const [cart, setCart] = useState([
-    { id: 1, title: "example", amount: 0, price: 0 },
-  ]);
+  const [cart, setCart] = useState([]);
   return (
     <>
       <div className={styles.navbar}>
