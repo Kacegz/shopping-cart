@@ -10,8 +10,18 @@
     transition: 200ms ease-in-out;
     font-family: "Handlee",cursive,monospace;
     font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-
+.numberInput{
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #D4af37;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
 .product{
     background-color: antiquewhite;
     height: 30vh;

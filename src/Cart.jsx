@@ -1,6 +1,6 @@
 import { useOutletContext } from "react-router-dom";
-
 import styles from "./Cart.module.css";
+
 const Cart = () => {
   const [cart, setCart] = useOutletContext();
   function handleRemove(item) {
@@ -15,9 +15,8 @@ const Cart = () => {
             cart.map((item) => {
               return (
                 <div className={styles.item} key={item.id}>
-                  <div className={styles.itemTitle}>
-                    <p>{item.title}</p>
-                  </div>
+                  <p>{item.title}</p>
+
                   <div className={styles.spacing}>
                     <p>Q:{item.amount}</p>
                     <p>{item.amount * item.price}$</p>

@@ -42,7 +42,7 @@ const Product = ({ item, cart, setCart }) => {
                 }}
               />
               <input
-                className=""
+                className={styles.numberInput}
                 type="text"
                 name=""
                 id="amount"

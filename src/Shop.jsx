@@ -31,8 +31,8 @@ const Shop = () => {
   }, []);
   return (
     <>
-      {loading && <div>Loading...</div>}
-      {error && <div>An error occured: {error}</div>}
+      {loading && <h1>Loading...</h1>}
+      {error && <h1>An error occured: {error}</h1>}
       {data && (
         <div id="main">
           <div className={styles.items}>
