@@ -1,9 +1,5 @@
 :root {
   font-family: "Handlee",cursive,monospace;
-  --background:#f4f6f4;
-  --primary:#AFB253;
-  --secondary:rgb(217, 219, 143);
-  --accent:#D8DC5A;
   color: black
 }
 @font-face {
