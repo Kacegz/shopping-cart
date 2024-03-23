@@ -1,0 +1,62 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Product buttons > Renders correctly 1`] = `
+<div>
+  <div
+    class="_product_fa50cc"
+  >
+    <img
+      alt="Product image"
+      class="_productImg_fa50cc"
+      src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+      srcset=""
+    />
+    <div
+      class="_details_fa50cc"
+    >
+      <div
+        class="_productName_fa50cc"
+      >
+        <p>
+          John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet
+        </p>
+        <p>
+          Price: 
+          695
+          $
+        </p>
+      </div>
+      <div
+        class="_options_fa50cc"
+      >
+        <div
+          class="_numbers_fa50cc"
+        >
+          <input
+            class="_amountButton_fa50cc"
+            type="button"
+            value="-"
+          />
+          <input
+            class="_numberInput_fa50cc"
+            id="amount"
+            name=""
+            type="text"
+            value="0"
+          />
+          <input
+            class="_amountButton_fa50cc"
+            type="button"
+            value="+"
+          />
+        </div>
+        <input
+          class="_amountButton_fa50cc"
+          type="button"
+          value="Add to cart"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

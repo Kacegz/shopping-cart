@@ -1,7 +1,6 @@
 import { useState } from "react";
 import styles from "./App.module.css";
 import { Link, Outlet } from "react-router-dom";
-import { useEffect } from "react";
 import cartimg from "./assets/cart.svg";
 import gem from "./assets/gem.svg";
 

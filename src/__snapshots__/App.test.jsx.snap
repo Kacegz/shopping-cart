@@ -1,0 +1,55 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App > Renders correctly 1`] = `
+<div>
+  <div
+    class="_navbar_6dc87e"
+  >
+    <div
+      class="_flexgap_6dc87e"
+    >
+      <a
+        class="_flex_6dc87e"
+        href="/"
+      >
+        <span
+          class="_flex_6dc87e"
+        >
+          <img
+            alt=""
+            class="_gem_6dc87e"
+            src="/src/assets/gem.svg"
+            srcset=""
+          />
+          Home
+        </span>
+      </a>
+      <a
+        href="/shop"
+      >
+        <div>
+          Shop
+        </div>
+      </a>
+    </div>
+    <a
+      href="/cart"
+    >
+      <div
+        class="_flex_6dc87e"
+      >
+        <img
+          alt=""
+          class="_navimg_6dc87e"
+          src="/src/assets/cart.svg"
+          srcset=""
+        />
+        0
+      </div>
+    </a>
+  </div>
+  <div
+    class="_main_6dc87e"
+  />
+</div>
+`;
