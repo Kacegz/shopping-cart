@@ -32,5 +32,4 @@ describe("Product buttons", () => {
     await user.click(decrement);
     expect(screen.getByRole("textbox", { name: "" })).toHaveValue("1");
   });
-  it("Adds to cart", async () => {});
 });
