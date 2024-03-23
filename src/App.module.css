@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-bottom: 1px solid var(--secondary);
+    border-bottom: 2px solid #D4af37;
     padding-left: 10vw;
     padding-right: 10vw;
     font-size: 32px;
@@ -29,17 +29,6 @@
     align-items: center;
     padding-left: 10vw;
     padding-right: 10vw;
-  }
-  
- .footer{
-    background-color:rgba(217, 219, 143,0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid var(--secondary);
-    padding-left: 10vw;
-    padding-right: 10vw;
-    
   }
   .flex{
     display: flex;

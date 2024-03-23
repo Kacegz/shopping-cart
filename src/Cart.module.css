@@ -21,13 +21,16 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20vh;
+    background-color: rgba(217, 219, 143,0.4);
 }
 .item{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
     border: 2px solid #D4af37;
     border-radius: 20px;
+    background-color: rgba(217, 219, 143,0.4);
 }
 .spacing{
     padding-left: 10px;
