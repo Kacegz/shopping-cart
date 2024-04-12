@@ -1,8 +1,8 @@
 import { useState } from "react";
 import styles from "./App.module.css";
 import { Link, Outlet } from "react-router-dom";
-import cartimg from "./assets/cart.svg";
-import gem from "./assets/gem.svg";
+import cartimg from "../assets/cart.svg";
+import gem from "../assets/gem.svg";
 
 function App() {
   const [cart, setCart] = useState([]);

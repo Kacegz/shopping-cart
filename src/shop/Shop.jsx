@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import styles from "./Shop.module.css";
-import Product from "./Product";
+import Product from "../product/Product";
 
 const Shop = () => {
   const [cart, setCart] = useOutletContext();
